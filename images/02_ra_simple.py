@@ -42,6 +42,17 @@ texte("POULIE", 400, 260, (0, 0, 255))
 texte("Temperature : 45 C", 390, 480, (0, 0, 255))
 texte("Etat : NORMAL", 390, 505, (0, 0, 255))
 
+
+cv2.putText(
+    image,
+    "Vitesse : 1500 RPM",
+    point(100, 380),
+    cv2.FONT_HERSHEY_SIMPLEX,
+    0.55,
+    (0, 180, 0),
+    2
+)
+ 
 cv2.imshow("RA - Deux composants", image)
 
 cv2.waitKey(0)
